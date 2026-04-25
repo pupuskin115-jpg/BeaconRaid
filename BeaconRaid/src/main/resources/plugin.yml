@@ -1,0 +1,17 @@
+name: BeaconRaid
+version: 1.0.0
+main: me.beaconraid.BeaconRaid
+api-version: "1.20"
+author: Developer
+description: Автоматический спавн маяка раз в 20 минут с PvP-зоной и лутабельными сундуками
+
+commands:
+  beaconraid:
+    description: Основная команда плагина BeaconRaid
+    aliases: [br, beacon]
+    usage: /beaconraid <start|stop|setloot|spawn|reload>
+
+permissions:
+  beaconraid.admin:
+    description: Доступ к админ-командам
+    default: op
