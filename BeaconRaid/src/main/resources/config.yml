@@ -1,0 +1,36 @@
+# Настройки автоматического спавна
+auto-spawn:
+  enabled: true
+  interval-minutes: 20
+
+# Продолжительность жизни маяка (когда истекает, сундуки разблокируются и маяк исчезает через 1 минуту)
+game-duration-minutes: 10
+
+# Радиус зоны захвата
+zone-radius: 10
+
+# Очки за секунду нахождения в зоне
+points-per-second: 1
+
+# Бонусные очки за убийство в зоне
+kill-bonus-points: 15
+
+# Настройки лута (шанс в процентах 0-100)
+loot:
+  chest1:
+    DIAMOND: 30.0
+    GOLDEN_APPLE: 50.0
+    IRON_INGOT: 70.0
+  chest2:
+    EMERALD: 25.0
+    ENDER_PEARL: 45.0
+    DIAMOND_SWORD: 10.0
+
+# Сообщения
+messages:
+  spawned: "&6[Маяк] &eМаяк заспавнился на координатах &fX:%x% Y:%y% Z:%z%"
+  entering-zone: "&aВы вошли в зону маяка!"
+  leaving-zone: "&cВы покинули зону маяка!"
+  chests-unlocked: "&6[Маяк] &eСундуки разблокированы! У вас 1 минута чтобы забрать лут!"
+  beacon-despawned: "&6[Маяк] &eМаяк исчез!"
+  winner-message: "&6[Маяк] &aПобедитель: &f%player% &aс &f%score% &aочками!"
