@@ -3,8 +3,6 @@ name: Build BeaconRaid
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
@@ -21,10 +19,10 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
-        run: mvn clean package --file pom.xml
+        run: cd BeaconRaid && mvn clean package
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: BeaconRaid
-          path: target/BeaconRaid.jar
+          path: BeaconRaid/target/BeaconRaid.jar
