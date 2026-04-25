@@ -51,4 +51,8 @@ public final class BeaconRaid extends JavaPlugin {
     public static BeaconRaid getInstance() {
         return instance;
     }
+
+    public GameManager getGameManager() {
+        return gameManager;
+    }
 }
